@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1 RK for Rent in Mumbai</title>
+<meta name="description" content="Bright, ready-to-move 1 RK for rent in Mumbai. Call or WhatsApp the owner directly. No brokerage.">
+<meta property="og:title" content="1 RK for Rent in Mumbai. Owner direct, no brokerage">
+<meta property="og:description" content="Ready-to-move 1 RK. See the floor plan, rent and details, then message the owner.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sea:#0e4d5a; --sea-deep:#0a3640; --marigold:#f5a524; --marigold-ink:#3a2400;
+  --bg:#f4f8f7; --surface:#ffffff; --ink:#12232b; --muted:#506671; --line:#d5e2e0;
+  --display:"Bricolage Grotesque","Trebuchet MS",sans-serif;
+  --body:"DM Sans","Segoe UI",system-ui,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0b1a1f; --surface:#112830; --ink:#eaf3f2; --muted:#9db6bb; --line:#244149; --sea:#6fc3cf; --sea-deep:#0a3640;
+  }
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--marigold);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.25rem}
+
+/* Hero */
+.hero{background:var(--sea-deep);color:#f2fbfa;position:relative;overflow:hidden}
+.hero .wrap{display:grid;gap:2rem;padding-top:3rem;padding-bottom:3.5rem}
+@media(min-width:48rem){.hero .wrap{grid-template-columns:1.15fr .85fr;align-items:center}}
+.hero h1{font:800 clamp(2.4rem,7vw,4.2rem)/1.02 var(--display);letter-spacing:-.02em;margin:0 0 1rem}
+.hero p.lead{font-size:1.15rem;max-width:34rem;margin:0 0 1.75rem;color:#cfe6e4}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.4rem;border-radius:999px;font:700 1rem var(--body);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s}
+.btn:active{transform:scale(.97)}
+.btn.primary{background:var(--marigold);color:var(--marigold-ink)}
+.btn.ghost{border-color:#7fb3ba;color:#f2fbfa}
+.btn.solid{background:var(--sea-deep);color:#fff}
+
+/* Key tag: the memorable element */
+.tag{position:relative;background:var(--marigold);color:var(--marigold-ink);border-radius:1.6rem;padding:2.6rem 1.75rem 1.75rem;transform:rotate(2.5deg);box-shadow:0 18px 40px rgba(0,0,0,.35);max-width:20rem;justify-self:center;width:100%}
+.tag::before{content:"";position:absolute;top:.9rem;left:50%;width:1.3rem;height:1.3rem;margin-left:-.65rem;border-radius:50%;background:var(--sea-deep);box-shadow:inset 0 0 0 3px #f9c565}
+.tag .kind{font:700 .95rem var(--body)}
+.tag .rent{font:800 3.4rem/1 var(--display);letter-spacing:-.03em;margin:.3rem 0}
+.tag .rent small{font:500 1rem var(--body);letter-spacing:0}
+.tag dl{margin:1rem 0 0;display:grid;grid-template-columns:auto 1fr;gap:.35rem 1rem;font-size:.97rem}
+.tag dt{opacity:.75}
+.tag dd{margin:0;font-weight:700;text-align:right}
+
+/* Sections */
+section{padding:3.25rem 0}
+h2{font:700 clamp(1.7rem,4vw,2.3rem)/1.1 var(--display);letter-spacing:-.01em;margin:0 0 1.5rem}
+.split{display:grid;gap:2.5rem}
+@media(min-width:48rem){.split{grid-template-columns:1fr 1fr;align-items:start}}
+.plan{background:var(--surface);border:1px solid var(--line);border-radius:1.2rem;padding:1rem}
+.plan svg{display:block;width:100%;height:auto}
+.plan figcaption{font-size:.9rem;color:var(--muted);margin-top:.5rem}
+.plan text{font:700 11px var(--body);fill:var(--ink)}
+.plan .wall{fill:none;stroke:var(--sea);stroke-width:4;stroke-linejoin:round}
+.plan .thin{fill:none;stroke:var(--sea);stroke-width:2}
+.plan .room{fill:color-mix(in srgb,var(--marigold) 16%,transparent)}
+.plan .wet{fill:color-mix(in srgb,var(--sea) 18%,transparent)}
+ul.ticks{list-style:none;margin:0;padding:0;display:grid;gap:.7rem}
+ul.ticks li{padding-left:2rem;position:relative}
+ul.ticks li::before{content:"";position:absolute;left:0;top:.45em;width:1.1rem;height:.6rem;border-left:3px solid var(--marigold);border-bottom:3px solid var(--marigold);transform:rotate(-45deg)}
+.gallery{display:grid;gap:.75rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr))}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:1rem;display:block}
+.band{background:var(--surface);border-block:1px solid var(--line)}
+.facts{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(12rem,1fr))}
+.fact{border-left:4px solid var(--marigold);padding:.2rem 0 .2rem 1rem}
+.fact b{display:block;font:700 1.15rem var(--display)}
+.fact span{color:var(--muted);font-size:.95rem}
+
+/* Enquiry */
+.enquire{background:var(--sea-deep);color:#f2fbfa}
+.enquire h2{color:#fff}
+form{display:grid;gap:1rem;max-width:34rem}
+label{display:grid;gap:.35rem;font-weight:500}
+input,select{font:inherit;padding:.8rem 1rem;border-radius:.8rem;border:2px solid #3d7b86;background:#0f4651;color:#fff}
+input::placeholder{color:#8fb7bd}
+footer{padding:1.75rem 0 5.5rem;color:var(--muted);font-size:.9rem}
+
+/* Sticky call bar on phones */
+.bar{position:fixed;inset:auto 0 0 0;display:flex;gap:.6rem;padding:.7rem 1rem calc(.7rem + env(safe-area-inset-bottom,0px));background:var(--surface);border-top:1px solid var(--line);z-index:5}
+.bar .btn{flex:1;justify-content:center;padding:.8rem}
+@media(min-width:48rem){.bar{display:none}footer{padding-bottom:1.75rem}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1 id="h-title">A bright 1 RK, ready to move in.</h1>
+      <p class="lead" id="h-lead">Owner direct. No brokerage. Clean, quiet and close to the station.</p>
+      <div class="btns">
+        <a class="btn primary" data-wa href="#">WhatsApp the owner</a>
+        <a class="btn ghost" data-call href="#">Call now</a>
+      </div>
+    </div>
+    <aside class="tag" aria-label="Rent summary">
+      <div class="kind">1 RK for rent</div>
+      <div class="rent"><span id="t-rent"></span><small> / month</small></div>
+      <dl>
+        <dt>Deposit</dt><dd id="t-dep"></dd>
+        <dt>Available</dt><dd id="t-avail"></dd>
+        <dt>Furnishing</dt><dd id="t-furn"></dd>
+        <dt>Area</dt><dd id="t-area"></dd>
+      </dl>
+    </aside>
+  </div>
+</header>
+
+<section class="band" aria-label="Key facts">
+  <div class="wrap facts" id="facts"></div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div>
+      <h2>What you get</h2>
+      <ul class="ticks" id="amenities"></ul>
+    </div>
+    <figure class="plan" style="margin:0">
+      <svg viewBox="0 0 360 400" role="img" aria-label="Floor plan: kitchen at the top left, then fridge, washing machine, bathroom and toilet in a row, entrance door on the left wall, a large main room below with the AC on the left wall and a window on the right wall">
+        <path class="room" d="M10 10H203V92H350V390H10Z"/>
+        <rect class="wet" x="10" y="10" width="193" height="82"/>
+        <rect class="wet" x="169" y="92" width="71" height="80"/>
+        <rect class="wet" x="240" y="92" width="110" height="80"/>
+        <path class="wall" d="M10 10H203V92H350V390H10Z"/>
+        <path class="thin" d="M10 92H203M10 172H350M108 92V172M169 92V172M240 92V172"/>
+        <path d="M10 180v44" stroke="var(--bg)" stroke-width="6"/>
+        <path class="thin" d="M10 224a44 44 0 0 1 44-44"/>
+        <path d="M350 190v130" stroke="var(--marigold)" stroke-width="6"/>
+        <rect x="18" y="300" width="52" height="14" rx="3" fill="var(--sea)"/>
+        <text x="60" y="56" text-anchor="middle">Kitchen</text>
+        <text x="59" y="136" text-anchor="middle">Fridge</text>
+        <text x="138" y="136" text-anchor="middle" style="font-size:10px">Washer</text>
+        <text x="204" y="136" text-anchor="middle">Bath</text>
+        <text x="295" y="136" text-anchor="middle">Toilet</text>
+        <text x="62" y="238" style="font-size:10px">Door</text>
+        <text x="44" y="330" text-anchor="middle">AC</text>
+        <text x="200" y="270" text-anchor="middle">Main room</text>
+      </svg>
+      <figcaption>Indicative layout, not to scale. The gold line is the window.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="photos-section" hidden>
+  <div class="wrap">
+    <h2>Take a look</h2>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<section class="enquire" id="enquire">
+  <div class="wrap">
+    <h2>Interested? Tell me a little about you.</h2>
+    <form id="form">
+      <label>Your name<input name="name" required autocomplete="name" placeholder="Full name"></label>
+      <label>What do you do?
+        <select name="who">
+          <option>Working professional</option><option>Student</option><option>Couple</option><option>Family</option>
+        </select>
+      </label>
+      <label>When would you like to move in?<input name="date" placeholder="e.g. 1 December"></label>
+      <button class="btn primary" type="submit">Send on WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Details are indicative. Visit before you decide. Rent agreement and police verification as per Maharashtra rules.</div>
+</footer>
+
+<nav class="bar" aria-label="Contact">
+  <a class="btn solid" data-call href="#">Call</a>
+  <a class="btn primary" data-wa href="#">WhatsApp</a>
+</nav>
+
+<script>
+/* ===== EDIT THIS BLOCK ONLY ===== */
+const CONFIG = {
+  phone: "918779259342",           // country code + number, no + or spaces
+  rent: "₹ 18,000",
+  deposit: "Discuss with owner",
+  available: "1 Dec 2026",
+  furnishing: "Appliances included",
+  area: "180 sq ft",
+  locality: "Goregaon East, Mumbai",
+  title: "A bright 1 RK, ready to move in.",
+  lead: "Owner direct. No brokerage. Comes with a 1 ton AC, fridge and fully automatic washing machine.",
+  facts: [
+    ["Location", "Goregaon East, opp. Nesco Compound"],
+    ["Floor", "3rd floor"],
+    ["Cooling", "1 ton dual inverter AC"],
+    ["Water", "500 litre tank"]
+  ],
+  amenities: [
+    "1 ton dual inverter AC",
+    "Fully automatic LG washing machine",
+    "Single-door fridge",
+    "Kitchen with granite platform and steel sink",
+    "3-burner gas stove available on request (we remove it if you don't need it)",
+    "Wall-mounted cabinets",
+    "French window on the gate side, with medium grill",
+    "Geyser for hot water",
+    "500 litre water tank",
+    "Wi-Fi router installed (not active yet, connect with your provider)"
+  ],
+  photos: ["img/room.jpg", "img/kitchen.jpg", "img/ac.jpg"]
+};
+/* ================================= */
+
+const $ = s => document.querySelector(s);
+const wa = msg => `https://wa.me/${CONFIG.phone}?text=${encodeURIComponent(msg)}`;
+$("#h-title").textContent = CONFIG.title;
+$("#h-lead").textContent = CONFIG.lead;
+$("#t-rent").textContent = CONFIG.rent;
+$("#t-dep").textContent = CONFIG.deposit;
+$("#t-avail").textContent = CONFIG.available;
+$("#t-furn").textContent = CONFIG.furnishing;
+$("#t-area").textContent = CONFIG.area;
+document.title = `1 RK for Rent, ${CONFIG.locality}`;
+
+$("#facts").innerHTML = CONFIG.facts.map(([k,v]) => `<div class="fact"><b>${v}</b><span>${k}</span></div>`).join("");
+$("#amenities").innerHTML = CONFIG.amenities.map(a => `<li>${a}</li>`).join("");
+
+if (CONFIG.photos.length) {
+  $("#photos-section").hidden = false;
+  $("#gallery").innerHTML = CONFIG.photos.map((p,i) => `<img src="${p}" alt="Photo ${i+1} of the 1 RK" loading="lazy">`).join("");
+}
+document.querySelectorAll("[data-call]").forEach(a => a.href = `tel:+${CONFIG.phone}`);
+document.querySelectorAll("[data-wa]").forEach(a => {
+  a.href = wa(`Hi, I saw your 1 RK listing in ${CONFIG.locality}. Is it still available?`);
+  a.target = "_blank"; a.rel = "noopener";
+});
+$("#form").addEventListener("submit", e => {
+  e.preventDefault();
+  const d = new FormData(e.target);
+  const msg = `Hi, I’m interested in your 1 RK in ${CONFIG.locality}.\nName: ${d.get("name")}\nI am a: ${d.get("who")}\nMove-in: ${d.get("date") || "flexible"}\nCan I visit this week?`;
+  window.open(wa(msg), "_blank", "noopener");
+});
+</script>
+</body>
+</html>
